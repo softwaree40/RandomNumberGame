@@ -24,14 +24,14 @@ function checkingGameLogic(event){
         document.querySelector(".message").textContent = `Wow!!!🙌🙌🙌`
         document.querySelector(".number").textContent = randomNumber;
         highScore++
-        document.querySelector(".highscore").textContent = highScore
+        document.querySelector(".highscore").textContent = `Highest Score: ${highScore}`
         document.querySelector("*").style.backgroundColor = "green"
         // when the input is low 
      }else if (guessNumber < randomNumber){
         if(score >1){
          document.querySelector(".message").textContent = "Too Low!"
          score--;
-         document.querySelector(".score").textContent = score;
+         document.querySelector(".score").textContent = `score: ${score}`
 
         }else{
          document.querySelector(".message").textContent = "You loose the game!!"
@@ -42,7 +42,7 @@ function checkingGameLogic(event){
         if(score >1){
          document.querySelector(".message").textContent = "Too High!"
          score--;
-         document.querySelector(".score").textContent = score;
+         document.querySelector(".score").textContent = `score: ${score}`
 
         }else{
          document.querySelector(".message").textContent = "You loose the game!!"
