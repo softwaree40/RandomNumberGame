@@ -1,10 +1,12 @@
 
-// document.querySelector(".tryagain")
+// 
 // document.querySelector(".message").textContent 
 // document.querySelector(".score").textContent
 // document.querySelector(".highscore").textContent
 // 
-
+document.querySelector(".tryagain").addEventListener("click", function(){
+   checkingGameLogic()
+})
 let randomNumber = Math.trunc(Math.random()* 20)+ 1;
 let score  = 20;
 document.querySelector(".check").addEventListener("click",checkingGameLogic);
@@ -23,6 +25,7 @@ function checkingGameLogic(event){
         document.querySelector(".number").textContent = randomNumber;
         highScore++
         document.querySelector(".highscore").textContent = highScore
+        document.querySelector("*").style.backgroundColor = "green"
         // when the input is low 
      }else if (guessNumber < randomNumber){
         if(score >1){
