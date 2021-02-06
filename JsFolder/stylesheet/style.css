@@ -1,0 +1,152 @@
+* {
+  background: linear-gradient(rgba(147, 141, 141, 0.5) 20%, white 80%);
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+body {
+  margin: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+.tryagain {
+  margin-right: 50px;
+}
+.number {
+  width: 10px;
+  height: 10px;
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 30px;
+  margin-left: 120px;
+  border: 0.5em solid green;
+  border-radius: 7px;
+  margin-bottom: 80px;
+  position: relative;
+  outline: 5px dotted rgba(90, 141, 128, 0.572);
+  outline-offset: -20px;
+  bottom: 20px;
+}
+.between {
+  text-align: end;
+  color: black;
+  font-size: large;
+}
+
+.left {
+  display: flexbox;
+  max-height: 20px;
+  position: absolute;
+  font-size: 20px;
+  float: left;
+  margin-right: 40px;
+}
+.rigth {
+  position: relative;
+  font-size: 20px;
+  float: right;
+  padding: 0px 0px 30px 10px;
+  margin: 0px 0px 0px 10px;
+  border: 2px solid gray;
+}
+.check {
+  position: absolute;
+  font-size: 20px;
+  margin-right: 60px;
+  top: 100px;
+  float: left;
+}
+.guessnum {
+  position: absolute;
+  width: 90px;
+  height: 45px;
+  margin-right: 70px;
+  background-color: rgb(189, 178, 118);
+  border: 5px solid silver;
+  border-radius: 6px;
+}
+.copy {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  margin-left: 100px;
+}
+/* This setting of laptops */
+/* @media screen and (min-width: 1200px) {
+  * {
+    background: linear-gradient(rgba(147, 141, 141, 0.5) 20%, white 80%);
+    box-sizing: border-box;
+    margin-left: 10px;
+  }
+  body {
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .tryagain {
+    margin-right: 50px;
+  }
+  .number {
+    width: 10px;
+    height: 10px;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 30px;
+    margin-left: 120px;
+    border: 0.5em solid green;
+    border-radius: 7px;
+    margin-bottom: 80px;
+    position: relative;
+    outline: 5px dotted rgba(90, 141, 128, 0.572);
+    outline-offset: -20px;
+    bottom: 20px;
+  }
+  .between {
+    text-align: end;
+    color: black;
+    font-size: large;
+  }
+
+  .left {
+    height: 20px;
+    position: absolute;
+    font-size: 20px;
+    float: left;
+    margin-right: 40px;
+  }
+  .rigth {
+    position: relative;
+    font-size: 20px;
+    float: right;
+    padding: 0px 0px 30px 10px;
+    margin: 0px;
+    border: 2px solid gray;
+  }
+  .check {
+    position: absolute;
+    font-size: 20px;
+    margin-right: 50px;
+    top: 100px;
+    float: left;
+  }
+  .guessnum {
+    position: absolute;
+    width: 90px;
+    height: 45px;
+    margin-right: 30px;
+    background-color: rgb(189, 178, 118);
+    border: 5px solid silver;
+    border-radius: 6px;
+  }
+  .copy {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    margin-left: 100px;
+  }
+} */
