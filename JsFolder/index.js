@@ -29,6 +29,10 @@ function checkingGameLogic(event){
         highScore++
         document.querySelector(".highscore").textContent = `Highest Score: ${highScore}`
         document.querySelector("*").style.backgroundColor = "green"
+        if(score > highScore){
+           highScore = score
+           document.querySelector(".highscore").textContent = `Highest Score: ${highScore}`
+        }
         // when the input is low 
      }else if (guessNumber < randomNumber){
         if(score >1){
@@ -59,10 +63,8 @@ function checkingGameLogic(event){
 
 document.querySelector(".tryagain").addEventListener("click", function(){
    score = 20;
-   highScore = 0
    document.querySelector(".message").textContent = `Starting games .....`
    document.querySelector(".score").textContent = `score ${score}`
-   document.querySelector(".highscore").textContent = `Highest Score: ${highScore}`
    document.querySelector(".number").textContent = "?"
    document.querySelector(".guessnum").value = ""
    document.querySelector("*").style.backgroundColor = ""

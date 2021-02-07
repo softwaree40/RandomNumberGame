@@ -80,8 +80,8 @@ h1 {
     top: 150px;
   }
 }
-/* This setting of laptops */
-/* @media screen and (min-width: 1200px) {
+/*This setting of laptops */
+@media screen and (max-width: 1200px) {
   * {
     background: linear-gradient(rgba(147, 141, 141, 0.5) 20%, white 80%);
     box-sizing: border-box;
@@ -156,4 +156,4 @@ h1 {
     text-align: center;
     margin-left: 100px;
   }
-} */
+
