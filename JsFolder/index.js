@@ -4,13 +4,16 @@
 // document.querySelector(".score").textContent
 // document.querySelector(".highscore").textContent
 // 
-document.querySelector(".tryagain").addEventListener("click", function(){
-   checkingGameLogic()
-})
+
+
+
+
 let randomNumber = Math.trunc(Math.random()* 20)+ 1;
 let score  = 20;
 document.querySelector(".check").addEventListener("click",checkingGameLogic);
 let highScore = 0
+
+
 function checkingGameLogic(event){
      event.preventDefault()
      //Random Number generator
@@ -54,7 +57,16 @@ function checkingGameLogic(event){
 }
 
 
-
+document.querySelector(".tryagain").addEventListener("click", function(){
+   score = 20;
+   highScore = 0
+   document.querySelector(".message").textContent = `Starting games .....`
+   document.querySelector(".score").textContent = `score ${score}`
+   document.querySelector(".highscore").textContent = `Highest Score: ${highScore}`
+   document.querySelector(".number").textContent = "?"
+   document.querySelector(".guessnum").value = ""
+   document.querySelector("*").style.backgroundColor = ""
+})
 
 
     
